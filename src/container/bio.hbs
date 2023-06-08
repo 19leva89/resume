@@ -3,7 +3,193 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<h1>Hello world</h1>
+<div>
+
+  <div>
+    <h1>Biography</h1>
+  </div>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>{{name}}</td>
+    </tr>
+    <tr>
+      <th>Birthdate</th>
+      <td>{{birthdate}}</td>
+    </tr>
+    <tr>
+      <th>Birthplace</th>
+      <td>{{birthplace}}</td>
+    </tr>
+    <tr>
+      <th>Deathdate</th>
+      <td>{{deathdate}}</td>
+    </tr>
+    <tr>
+      <th>Deathplace</th>
+      <td>{{deathplace}}</td>
+    </tr>
+    <tr>
+      <th>Nationality</th>
+      <td>{{nationality}}</td>
+    </tr>
+    <tr>
+      <th>Occupation</th>
+      <td>{{occupation}}</td>
+    </tr>
+  </table>
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Education:</h2>
+  </div>
+
+  {{#each education}}
+    <ul>
+      <li>
+        {{institution}},
+        {{field}},
+        {{degree}},
+        {{year}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Notable publications:</h2>
+  </div>
+
+  {{#each notable_publications}}
+    <ul>
+      <li>
+        {{title}},
+        {{year}},
+        {{publisher}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Partners:</h2>
+  </div>
+
+  {{#each partners}}
+    <ul>
+      <li>
+        {{name}},
+        {{relationship}},
+        {{years}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Awards:</h2>
+  </div>
+
+  {{#each awards}}
+    <ul>
+      <li>
+        {{title}},
+        {{year}},
+        {{description}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Influences:</h2>
+  </div>
+
+  {{#each influences}}
+    <ul>
+      <li>
+        {{this}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Influenced:</h2>
+  </div>
+
+  {{#each influenced}}
+    <ul>
+      <li>
+        {{this}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Quotes:</h2>
+  </div>
+
+  {{#each quotes}}
+    <ul>
+      <li>
+        {{this}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Major discoveries:</h2>
+  </div>
+
+  {{#each major_discoveries}}
+    <ul>
+      <li>
+        {{title}},
+        {{year}},
+        {{description}}
+      </li>
+    </ul>
+  {{/each}}
+
+  <br />
+  <hr />
+
+  <div>
+    <h2>Contributions:</h2>
+  </div>
+
+  {{#with contributions}}
+    <ul>
+      <li>
+        {{title}},
+        {{year}},
+        {{description}},
+        {{field}}
+      </li>
+    </ul>
+  {{/with}}
+
+</div>
 
 {{!
 Цей код містить лише те, що буде виводитись в
