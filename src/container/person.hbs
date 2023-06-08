@@ -6,14 +6,10 @@
 <div>
   {{#with person}}
     <div>
-      <h1>About Me</h1>
+      <h1>{{name}}</h1>
     </div>
 
     <ul>
-      <li>
-        Full Name:
-        {{name}}
-      </li>
       <li>
         Age:
         {{age}},
@@ -99,9 +95,11 @@
                                 {{email}}
                               </li>
                               <p>Skills:</p>
-                              <ul>
-                                <li>{{skills}}</li>
-                              </ul>
+                              {{#each skills}}
+                                <ul>
+                                  <li>{{this}}</li>
+                                </ul>
+                              {{/each}}
                               <p>Projects:</p>
                               {{#each projects}}
                                 <ul>
@@ -110,11 +108,13 @@
                                     ({{description}})
                                   </li>
                                   <li>Technologies</li>
-                                  <ul>
-                                    <li>
-                                      {{technologies}}
-                                    </li>
-                                  </ul>
+                                  {{#each technologies}}
+                                    <ul>
+                                      <li>
+                                        {{this}}
+                                      </li>
+                                    </ul>
+                                  {{/each}}
                                   <li>Team members</li>
                                   <ul>
                                     {{#each team_members}}
