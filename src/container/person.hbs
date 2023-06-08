@@ -67,10 +67,8 @@
                 {{company}}
                 (founded:
                 {{year_founded}})</em></h3>
-
             <p>{{startDate}} - {{endDate}}</p>
             <p>{{responsibilities}}</p>
-
             <p>Employees:</p>
             {{#each employees}}
               <ul>
@@ -78,7 +76,6 @@
                   {{name}},
                   {{position}},
                   {{department}}
-
                   {{#each projects}}
                     <ul>
                       <li>{{name}}</li>
@@ -88,16 +85,13 @@
                       {{#each teams}}
                         <ul>
                           <li>{{team_name}}</li>
-
                           {{#with team_leader}}
                             <p>Team leader:</p>
                             <ul>
                               <li>{{name}}, {{email}}</li>
-
                             </ul>
                             <p>Team members:</p>
                           {{/with}}
-
                           {{#each team_members}}
                             <ul>
                               <li>{{name}},
@@ -109,7 +103,6 @@
                                 <li>{{skills}}</li>
                               </ul>
                               <p>Projects:</p>
-
                               {{#each projects}}
                                 <ul>
                                   <li>
@@ -117,29 +110,24 @@
                                     ({{description}})
                                   </li>
                                   <li>Technologies</li>
-
                                   <ul>
                                     <li>
                                       {{technologies}}
                                     </li>
                                   </ul>
-
                                   <li>Team members</li>
                                   <ul>
-
                                     {{#each team_members}}
                                       <li>
                                         {{name}},
                                         {{title}}
                                       </li>
                                     {{/each}}
-
                                   </ul>
                                 </ul>
                               {{/each}}
                             </ul>
                           {{/each}}
-
                         </ul>
                       {{/each}}
                     </ul>
@@ -149,10 +137,8 @@
             {{/each}}
           </li>
         </ul>
-
       {{/each}}
     </div>
-
   {{/with}}
 </div>
 
