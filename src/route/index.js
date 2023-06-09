@@ -68,8 +68,8 @@ router.get('/summary', function (req, res) {
       experience: {
         title: 'Other experience',
         text: `Pet project for parsing sport betting data from different platforms ( odds ) and sport statistics (
-			  tournament position, goals etc), analyzing by simple mathematics models and preparing probability
-			  for such events like: money line - first win / draw / second win, totals etc.`,
+				tournament position, goals etc), analyzing by simple mathematics models and preparing probability
+				for such events like: money line - first win / draw / second win, totals etc.`,
       },
     },
 
