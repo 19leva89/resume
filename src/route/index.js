@@ -677,7 +677,7 @@ router.get('/js', function (req, res) {
       'Object',
     ],
     syntax: {
-      var: ['var', 'let', 'const'],
+      variables: ['var', 'let', 'const'],
       functions: ['function'],
       conditionals: ['if', 'else', 'switch'],
       loops: ['for', 'while', 'do-while'],
@@ -727,6 +727,10 @@ router.get('/js', function (req, res) {
       {
         name: 'CSS-Tricks',
         type: 'blog',
+      },
+    ],
+  })
+})
 
 router.get('/car', function (req, res) {
   // res.render генерує нам HTML сторінку
@@ -823,6 +827,8 @@ router.get('/car', function (req, res) {
       },
       total: 28990,
     },
+  })
+})
 
 router.get('/mac', function (req, res) {
   // res.render генерує нам HTML сторінку
@@ -909,6 +915,7 @@ router.get('/mac', function (req, res) {
       ],
     },
   })
+})
 
 router.get('/facebook', function (req, res) {
   // res.render генерує нам HTML сторінку
