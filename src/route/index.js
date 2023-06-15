@@ -183,7 +183,6 @@ router.get('/work', function (req, res) {
   res.render('work', {
     // ↙ сюди вводимо JSON дані
     layout: 'big',
-
     page: {
       title: 'Resume | Work',
     },
@@ -245,7 +244,6 @@ router.get('/person', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('person', {
     layout: 'basic',
-
     person: {
       name: 'Emma Johnson',
       age: 32,
@@ -345,7 +343,6 @@ router.get('/bio', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('bio', {
     layout: 'basic',
-
     name: 'Albert Einstein',
     birthdate: 'March 14, 1879',
     birthplace:
@@ -441,7 +438,6 @@ router.get('/program', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('program', {
     layout: 'basic',
-
     program: {
       excursion: {
         name: 'Cultural Tour',
@@ -526,7 +522,6 @@ router.get('/web', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('web', {
     layout: 'basic',
-
     web: {
       languages: [
         {
@@ -657,7 +652,6 @@ router.get('/js', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('js', {
     layout: 'basic',
-
     name: 'JavaScript',
     description:
       'JavaScript is a popular high-level, dynamic, and interpreted programming language.',
@@ -736,7 +730,6 @@ router.get('/car', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('car', {
     layout: 'basic',
-
     make: 'Toyota',
     model: 'Camry',
     year: 2022,
@@ -834,7 +827,6 @@ router.get('/mac', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('mac', {
     layout: 'basic',
-
     name: 'Apple MacBook Pro',
     description: 'The ultimate notebook for power users',
     price: 1999.99,
@@ -921,7 +913,6 @@ router.get('/facebook', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('facebook', {
     layout: 'basic',
-
     name: 'Facebook',
     users: [
       {
@@ -1098,7 +1089,6 @@ router.get('/task21', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('task21', {
     layout: 'basic',
-
     heading: {
       main: {
         title: 'JavaScript',
@@ -1167,7 +1157,6 @@ router.get('/task22', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('task22', {
     layout: 'basic',
-
     page_header: {
       title: 'InnovaMind',
       description: 'Welcome to our wonderful community',
@@ -1225,7 +1214,6 @@ router.get('/task31', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('task31', {
     layout: 'basic',
-
     navigation: {
       links: [
         {
@@ -1241,7 +1229,7 @@ router.get('/task31', function (req, res) {
           href: 'https://www.youtube.com/',
         },
       ],
- button: {
+      button: {
         text: 'Lets start',
         href: 'https://nodejs.org/en/',
       },
@@ -1471,6 +1459,7 @@ router.get('/task31', function (req, res) {
       ],
     },
   })
+  //                  ↑↑ сюди вводимо JSON дані
 })
 
 router.get('/shophome', function (req, res) {
@@ -1479,6 +1468,22 @@ router.get('/shophome', function (req, res) {
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('shophome', {
     layout: 'shop',
+    navigation: {
+      links: [
+        {
+          text: 'Home',
+          href: 'https://github.com/',
+        },
+        {
+          text: 'Contacts',
+          href: 'https://www.google.com/',
+        },
+        {
+          text: 'Help',
+          href: 'https://www.youtube.com/',
+        },
+      ],
+    },
 
     newsBlock: {
       title: 'Latest News',
@@ -1741,7 +1746,6 @@ router.get('/shophome', function (req, res) {
     ],
   })
 })
-
 
 // ================================================================
 
