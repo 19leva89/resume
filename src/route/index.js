@@ -45,7 +45,6 @@ router.get('/', function (req, res) {
   //                  ↑↑ сюди вводимо JSON дані
 })
 
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/summary', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('summary', {
@@ -75,7 +74,6 @@ router.get('/summary', function (req, res) {
   })
 })
 
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/skills', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('skills', {
@@ -135,7 +133,6 @@ router.get('/skills', function (req, res) {
   })
 })
 
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/education', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('education', {
@@ -177,7 +174,6 @@ router.get('/education', function (req, res) {
   })
 })
 
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/work', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('work', {
@@ -239,7 +235,6 @@ router.get('/work', function (req, res) {
   })
 })
 
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/person', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('person', {
@@ -338,7 +333,6 @@ router.get('/person', function (req, res) {
   })
 })
 
-//              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/bio', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
   res.render('bio', {
