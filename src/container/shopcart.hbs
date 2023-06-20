@@ -2,27 +2,27 @@
 
 	{{!-- Nav Menu --}}
 	{{#with navigation}}
-	<div class="card mb-3 py-2">
-		<div class="nav">
-			{{#each links}}
-			<div class="nav-item">
-				<a href="{{href}}" class="nav-link {{#if @last}}disabled{{/if}}">{{text}}</a>
+		<div class="card mb-3 py-2">
+			<div class="nav">
+				{{#each links}}
+					<div class="nav-item">
+						<a href="{{href}}" class="nav-link {{#if @last}}disabled{{/if}}">{{text}}</a>
+					</div>
+				{{/each}}
 			</div>
-			{{/each}}
 		</div>
-	</div>
 	{{/with}}
 	{{!-- Nav Menu --}}
 
 
 	{{#with header}}
-	<h1 class="mt-5">{{title}}</h1>
+		<h1 class="mt-5">{{title}}</h1>
 
-	<div class="mt-3">
-		{{#with button}}
-		<a href="{{link}}" class="btn btn-outline-secondary">{{text}}</a>
-		{{/with}}
-	</div>
+		<div class="mt-3">
+			{{#with button}}
+				<a href="{{link}}" class="btn btn-outline-secondary">{{text}}</a>
+			{{/with}}
+		</div>
 	{{/with}}
 
 	<div class="my-5">
@@ -37,16 +37,16 @@
 	</div>
 
 	{{#with total}}
-	<h2 class="mt-3">{{title}}</h2>
-	<h1 class="mt-3">{{amount}}</h1>
-	<p class="mt-3">{{delivery}}</p>
+		<h2 class="mt-3">{{title}}</h2>
+		<h1 class="mt-3">{{amount}}</h1>
+		<p class="mt-3">{{delivery}}</p>
 
-	{{#each buttons}}
-	<div class="">
-		<a href="{{link}}"
-			class="mt-3 btn {{#if isSuccess}}btn-success{{/if}}{{#if isOutline}}btn-outline-success{{/if}}">{{text}}</a>
-	</div>
-	{{/each}}
+		{{#each buttons}}
+			<div class="">
+				<a href="{{link}}"
+					class="mt-3 btn {{#if isSuccess}}btn-success{{/if}}{{#if isOutline}}btn-outline-success{{/if}}">{{text}}</a>
+			</div>
+		{{/each}}
 
 	{{/with}}
 
@@ -55,34 +55,30 @@
 	</div>
 
 	{{#with goodsOtherBlock}}
-	<h2 class="mt-3 text-center">{{title}}</h2>
+		<h2 class="mt-3 text-center">{{title}}</h2>
 
-	<div class="row g-2">
+		<div class="row g-2">
 
-		{{#each cards}}
-		<div class="col-4">
-			<div class="card">
-				<img class="card-img-top" src="{{image}}" alt="{{title}}">
-				<div class="card-body">
-					<h5 class="card-title">{{title}}
+			{{#each cards}}
+				<div class="col-4">
+					<div class="card">
+						<img class="card-img-top" src="{{image}}" alt="{{title}}">
+						<div class="card-body">
+							<h5 class="card-title">{{title}}
+								{{#if isHot}}
+									<span class="badge text-bg-warning text-uppercase">Hot!</span>
+								{{/if}}
 
-						{{#if isHot}}
-						<span class="badge text-bg-warning text-uppercase">Hot!</span>
-						{{/if}}
-
-						{{#if isNew}}
-						<span class="badge text-bg-primary">New</span>
-						{{/if}}
-
-					</h5>
-					<p class="">description{{description}}</p>
-
+								{{#if isNew}}
+									<span class="badge text-bg-primary">New</span>
+								{{/if}}
+							</h5>
+							<p class="">{{description}}</p>
+						</div>
+					</div>
 				</div>
-			</div>
+			{{/each}}
 		</div>
-		{{/each}}
-
-	</div>
 	{{/with}}
 
 	<div class="my-5">
@@ -90,23 +86,21 @@
 	</div>
 
 	{{#with subscribe}}
-	<div class="row">
-		<div class="col-12">
-			<div class="card text-bg-dark">
-				<div class="card-body">
-					<h2 class="card-title ">{{header}}</h2>
-					<p class="">{{description}}</p>
-
-					{{#each buttons}}
-					<div class="mt-3">
-						<a class="btn btn-primary" href="{{link}}">{{text}}</a>
+		<div class="row">
+			<div class="col-12">
+				<div class="card text-bg-dark">
+					<div class="card-body">
+						<h2 class="card-title ">{{header}}</h2>
+						<p class="">{{description}}</p>
+						{{#each buttons}}
+							<div class="mt-3">
+								<a class="btn btn-primary" href="{{link}}">{{text}}</a>
+							</div>
+						{{/each}}
 					</div>
-					{{/each}}
-
 				</div>
 			</div>
 		</div>
-	</div>
 	{{/with}}
 
 	<div class="my-5">
@@ -117,13 +111,13 @@
 	<div class="col-10">
 		<div class="row">
 			{{#each footer}}
-			<div class="col-2">
-				{{#each this}}
-				<div>
-					<a href="{{link}}" class=" nav nav-link {{#if @last}}disabled{{/if}}">{{text}}</a>
+				<div class="col-2">
+					{{#each this}}
+						<div>
+							<a href="{{link}}" class=" nav nav-link {{#if @last}}disabled{{/if}}">{{text}}</a>
+						</div>
+					{{/each}}
 				</div>
-				{{/each}}
-			</div>
 			{{/each}}
 		</div>
 	</div>

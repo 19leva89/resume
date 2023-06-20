@@ -2,20 +2,20 @@
 	<hr class="my-5">
 
 	{{#with footer}}
-	<div>
-		{{#with social}}
-		{{> link text=email.text href=email.href blankActive=true}}
-		{{> link text=phone.text href=phone.href blankActive=true}}
-		{{> link text=linkedin.text href=linkedin.href blankActive=true noLine=true}}
-		{{/with}}
-	</div>
+		<div>
+			{{#with social}}
+			{{> link text=email.text href=email.href blankActive=true}}
+			{{> link text=phone.text href=phone.href blankActive=true}}
+			{{> link text=linkedin.text href=linkedin.href blankActive=true noLine=true}}
+			{{/with}}
+		</div>
 
-	<div class="my-3">
-		<em>Copyright by {{../header.name.firstname}} {{../header.name.lastname}}</em>
-	</div>
+		<div class="my-3">
+			<em>Copyright by {{../header.name.firstname}} {{../header.name.lastname}}</em>
+		</div>
 
-	<div>
-		<address>{{../header.address}}</address>
-	</div>
+		<div>
+			<address>{{../header.address}}</address>
+		</div>
 	{{/with}}
 </footer>
